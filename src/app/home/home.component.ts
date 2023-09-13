@@ -11,11 +11,7 @@ export class HomeComponent implements OnInit {
   musicCurrentTime!: number;
   musicDuration!: number;
   musicArr: any[] = [
-    {
-      musicUrl:
-        '../../assets/Hisham Kharma _ Kun _ هشام خرما _ كُن(MP3_160K).mp3',
-      musicName: 'Hisham Kharma _ Kun _ هشام خرما _ كُن(MP3_160K).mp3',
-    },
+    
   ];
   isPlaying: boolean = false;
   musicId: number = 0;
