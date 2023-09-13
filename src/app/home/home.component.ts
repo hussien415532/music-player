@@ -6,12 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-
   audio = new Audio();
   panelOpenState: boolean = false;
   musicCurrentTime!: number;
   musicDuration!: number;
-  musicArr: any[] = [];
+  musicArr: any[] = [
+    {
+      musicUrl:
+        '../../assets/Hisham Kharma _ Kun _ هشام خرما _ كُن(MP3_160K).mp3',
+      musicName: 'Hisham Kharma _ Kun _ هشام خرما _ كُن(MP3_160K).mp3',
+    },
+  ];
   isPlaying: boolean = false;
   musicId: number = 0;
   addToArr(e: any) {
@@ -90,9 +95,8 @@ export class HomeComponent implements OnInit {
     });
   }
   progressArea(ev: any) {
-    if(this.musicArr.length>0)
-
-    this.audio.currentTime =
-      (ev.offsetX / ev.target.clientWidth) * this.musicDuration;
+    if (this.musicArr.length > 0)
+      this.audio.currentTime =
+        (ev.offsetX / ev.target.clientWidth) * this.musicDuration;
   }
 }

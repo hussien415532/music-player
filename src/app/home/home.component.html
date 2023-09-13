@@ -28,7 +28,7 @@
     <button mat-fab color="warn">
       <label for="music">
         <mat-icon class="d-block w-100">add</mat-icon>
-        <input type="file" id="music" multiple hidden (change)="addToArr($event)">
+        <input type="file" id="music" multiple hidden (change)="addToArr($event)" accept="audio/*">
       </label>
     </button>
 
