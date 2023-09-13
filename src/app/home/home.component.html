@@ -23,7 +23,7 @@
       <div>{{musicDuration |musicTime}}</div>
     </div>
   </div>
-  <div class="addMusic mt-3 d-flex gap-4 justify-content-center align-items-center">
+  <div class="addMusic mt-3 d-flex gap-4 justify-content-center align-items-start">
 
     <button mat-fab color="warn">
       <label for="music">
@@ -33,7 +33,7 @@
     </button>
 
 
-    <mat-accordion>
+    <mat-accordion style="max-height: 700px; overflow: auto;">
       <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
         <mat-expansion-panel-header>
           <mat-panel-title>
